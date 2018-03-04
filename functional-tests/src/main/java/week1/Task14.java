@@ -12,7 +12,10 @@ public class Task14 {
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
 
-        //      Yours code...
+        int lastnuma = a % 10;
+        int lastnumb = b % 10;
+
+        System.out.println(lastnuma == lastnumb);
 
     }
 }

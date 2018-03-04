@@ -9,6 +9,13 @@ public class Task1 {
     public static void main(String[] args) {
         int time = Integer.parseInt(args[0]);
 
-//      Yours code...
+        if (time >= 9 && time <= 18) {
+            System.out.println("Я на работе");
+        }
+        else if (time <= 24 && time >= 0) {
+            System.out.println("Я отдыхаю");
+        } else {
+            System.out.println("Неверное число");
+        }
     }
 }
