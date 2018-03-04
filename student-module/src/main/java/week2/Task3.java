@@ -16,11 +16,8 @@ public class Task3 {
 
             System.out.print("null");
 
-        } else if (array.length == 0) {
-
-            System.out.print("{}");
-
-        } else {
+        } else if (array.length == 0) System.out.print("{}");
+        else {
 
             for (int i = 0; i < array.length; i++) {
 
