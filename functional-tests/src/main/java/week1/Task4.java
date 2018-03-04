@@ -11,8 +11,21 @@ public class Task4 {
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
 
+        boolean triangle;
+        boolean triangle1;
+        boolean triangle2;
 
-//      Yours code...
+        triangle = Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
+        triangle1 = Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2);
+        triangle2 = Math.pow(b, 2) + Math.pow(c, 2) == Math.pow(a, 2);
 
+        if (a + b > c || a + c > b || b + c > a) {
+
+            if (triangle || triangle1 || triangle2) {
+                System.out.println(true);
+            } else {
+                System.out.println(false);
+            }
+        }
     }
 }

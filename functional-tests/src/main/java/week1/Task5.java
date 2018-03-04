@@ -9,7 +9,8 @@ public class Task5 {
         int metersPerSecond = Integer.parseInt(args[0]);
         int kilometersPerHour = Integer.parseInt(args[1]);
 
-//      Yours code...
-
+        if ((kilometersPerHour * 5 / 18) > metersPerSecond) {
+            System.out.println(kilometersPerHour);
+        } else System.out.println(metersPerSecond);
     }
 }
