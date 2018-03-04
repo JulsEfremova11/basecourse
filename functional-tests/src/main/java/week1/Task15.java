@@ -11,7 +11,27 @@ public class Task15 {
     public static void main(String[] args) {
         int number = Integer.parseInt(args[0]);
 
-        //      Yours code...
+        int firstnum = number % 10;
+        int secondnum = number / 10 % 10;
+        int thirdnum = number / 100;
+
+        if (firstnum == 5 && secondnum == 5 && thirdnum == 5) {
+
+            System.out.println(3);
+
+        } else if (firstnum == 5 && secondnum == 5 || firstnum == 5 && thirdnum == 5 || secondnum == 5 && thirdnum == 5){
+
+            System.out.println(2);
+
+        } else if (firstnum == 5 || secondnum == 5 && thirdnum == 5) {
+
+            System.out.println(1);
+
+        } else {
+
+            System.out.println(0);
+
+        }
 
     }
 }

@@ -10,7 +10,27 @@ public class Task2 {
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
 
+        int maxnum;
+        int minnum;
 
-//      Yours code...
+        if (a >= b) {
+            maxnum = a;
+        } else
+            maxnum = b;
+
+        if (c >= maxnum) {
+            maxnum = c;
+        }
+
+        if (a <= b) {
+            minnum = a;
+        } else
+            minnum = b;
+
+        if (c <= minnum) {
+            minnum = c;
+        }
+
+        System.out.println(maxnum);
     }
 }

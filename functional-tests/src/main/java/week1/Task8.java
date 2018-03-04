@@ -7,7 +7,16 @@ public class Task8 {
     public static void main(String[] args) {
         int purchase = Integer.parseInt(args[0]);
 
+        double res = purchase * 0.9;
 
-//      Yours code...
+        if (purchase >= 1000) {
+
+            System.out.println(res);
+
+        } else {
+
+            System.out.println(purchase);
+
+        }
     }
 }
