@@ -12,17 +12,22 @@ public class Task4 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        if (array == null) { System.out.print("null"); } else if (array.length == 0) { System.out.print("{}") };
+        if (array == null) { 
+          System.out.print("null"); 
+          } else if (array.length == 0) { 
+            System.out.print("{}"); 
+            }
         else {
-            int min = array[0];
-            int max = array[0];
-for (int i = 1; i < array.length; i++) {
-if (array[i] < min) {
-min = array[i];
-} else if (array[i] > max) {
-max = array[i]; }
-}
-        }
-        System.out.println("Min = " + min + ", max = " + max);
+          int min = array[0];
+          int max = array[0];
+for (int i = 0; i < array.length; i++) {
+  if (array[i] < min) {
+  min = array[i];
+  }  else if (array[i] > max) {
+     max = array[i]; 
+     }
+} System.out.println("Min = " + min + ", Max = " + max);
+        } 
+        
     }
 }
