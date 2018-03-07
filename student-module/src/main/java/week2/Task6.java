@@ -18,12 +18,43 @@ public class Task6 {
     public static void main(String[] args) {
 
         int[] array = TaskUtils.arrayConverter(args);
-
-        int sum1 = 0;
-        int sum2 = 0;
-        
-        int arrrayHalf = array.length / 2;
-        
+// int[] array = {84, 99, 43, 31, 12, 79, 6, 17, 55};     
+	  int sum1 = 0;     
+	  int sum2 = 0;               
+	  int arrayHalf = array.length / 2;             
+	for (int i=0; i < array.length; i++) {      
+		
+	  	if (i >= 0 && i < arrayHalf) {    
+	  		
+			sum1 += array[i];  }      
+		
+	}
+	  	sum1= sum1/arrayHalf;   
+	  	
+  	for (int i=arrayHalf; i < array.length; i++) {   
+  		
+		if (i >= arrayHalf && i < array.length) { 
+			
+			sum2 += array[i];  }      
+  		
+  	} 
+		sum2 = sum2/arrayHalf;              
+System.out.print("{");
+if (sum1 > sum2) {
+for (int i=0; i < arrayHalf-1; i++)  {
+	if (sum1 > sum2) { 
+		System.out.print(array[i]+", "); 
+	}  
+}
+	System.out.print(array[arrayHalf-1] + "}");
+} else {
+for(int i=arrayHalf; i < array.length-1; i++) {
+    System.out.print(array[i]+", ");
+    
+} 
+	
+	 System.out.print(array[array.length - 1] + "}");
+}
         
 
     }
