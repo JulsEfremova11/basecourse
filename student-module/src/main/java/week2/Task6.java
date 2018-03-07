@@ -19,7 +19,12 @@ public class Task6 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-    
+        int sum1 = 0;
+        int sum2 = 0;
+        
+        int arrrayHalf = array.length / 2;
+        
+        
 
     }
 }
