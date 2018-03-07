@@ -19,82 +19,82 @@ public class Task6 {
 
         int[] array = TaskUtils.arrayConverter(args);
 // int[] array = {84, 99, 43, 31, 12, 79, 6, 17, 55};     
-
-	  int[] array = {7, 2, 15, 99, 3, 14, 7};
+      int[] array = {7, 2, 15, 99, 3, 14, 7};
  
-	  int sum1 = 0;     
-	  int sum2 = 0;               
-	  int arrayHalf = array.length / 2;      
+      int sum1 = 0;     
+      int sum2 = 0;               
+      int arrayHalf = array.length / 2;      
  
-	 if (array.length % 2 == 0) {
+     if (array.length % 2 == 0) {
  
-	 	for (int i=0; i < array.length; i++) {      
+         for (int i=0; i < array.length; i++) {      
  
-	  	if (i >= 0 && i < arrayHalf) {    
+          if (i >= 0 && i < arrayHalf) {    
  
-			sum1 += array[i];  }      
+            sum1 += array[i];  }      
  
-	}
-	  	sum1= sum1/arrayHalf;   
+    }
+          sum1= sum1/arrayHalf;   
  
-  	for (int i=arrayHalf; i < array.length; i++) {   
+      for (int i=arrayHalf; i < array.length; i++) {   
  
-		if (i >= arrayHalf && i < array.length) { 
+        if (i >= arrayHalf && i < array.length) { 
  
-			sum2 += array[i];  }      
+            sum2 += array[i];  }      
  
-  	} 
-		sum2 = sum2/arrayHalf;              
+      } 
+        sum2 = sum2/arrayHalf;              
 System.out.print("{");
 if (sum1 > sum2) {
 for (int i=0; i < arrayHalf-1; i++)  {
-	if (sum1 > sum2) { 
-		System.out.print(array[i]+", "); 
-	}  
+    if (sum1 > sum2) { 
+        System.out.print(array[i]+", "); 
+    }  
 }
-	System.out.print(array[arrayHalf-1] + "}");
+    System.out.print(array[arrayHalf-1] + "}");
 } else if (sum1 < sum2) {
 for(int i=arrayHalf; i < array.length-1; i++) {
     System.out.print(array[i]+", ");
+	 System.out.print("}");
  
 } 
  
-	 System.out.print(array[array.length - 1] + "}");
-} 	else {
-	for (int i=0; i < array.length; i++)  {
-		 System.out.print(array[i]);
-	}
+     System.out.print(array[array.length - 1] + "}");
+}     else {
+    for (int i=0; i < array.length; i++)  {
+         System.out.print(array[i]);
+    }
 }
  
-	 } 
-	 // проверка если длина массава непарная
-	 else
+     } 
+     // проверка если длина массава непарная
+     else
  
-	 	for (int i=0; i < array.length; i++) {      
+         for (int i=0; i < array.length; i++) {      
  
-	  	if (i >= 0 && i < arrayHalf) {    
+          if (i >= 0 && i < arrayHalf) {    
  
-			sum1 += array[i];  }      
+            sum1 += array[i];  }      
  
-	}
-	  	sum1= sum1/arrayHalf;   
+    }
+          sum1= sum1/arrayHalf;   
  
-  	for (int i=arrayHalf-1; i < array.length; i++) {   
+      for (int i=arrayHalf-1; i < array.length; i++) {   
  
-		if (i > arrayHalf && i < array.length) { 
+        if (i > arrayHalf && i < array.length) { 
  
-			sum2 += array[i];  }      
+            sum2 += array[i];  }      
  
-  	} 
-		sum2 = sum2/arrayHalf;              
+      } 
+        sum2 = sum2/arrayHalf;              
 System.out.print("{");
 if (sum1 > sum2) {
 for (int i=0; i < arrayHalf-1; i++)  {
-	if (sum1 > sum2) { 
-		System.out.print(array[i]+", "); 
-	}  
+    if (sum1 > sum2) { 
+        System.out.print(array[i]+", "); 
+    }  
 }
-	System.out.print(array[arrayHalf-1] + "}");
+    System.out.print(array[arrayHalf-1] + "}");
 } 
 else if (sum1 < sum2) {
 for(int i=array.length-arrayHalf; i < array.length-1; i++) {
@@ -102,33 +102,12 @@ for(int i=array.length-arrayHalf; i < array.length-1; i++) {
  
 } 
  
-	 System.out.print(array[array.length - 1] + "}");
-} 	else {
-	for (int i=0; i < array.length; i++)  {
-		 System.out.print(array[i]);
-	}
-} else if (sum1 < sum2) {
-for(int i=arrayHalf; i < array.length-1; i++) {
-    System.out.print(array[i]+", ");
- 
-} 
- 
-	 System.out.print(array[array.length - 1] + "}");
-} 	else {
-	for (int i=0; i < array.length; i++)  {
-		 System.out.print(array[i]);
-	}
+     System.out.print(array[array.length - 1] + "}");
+}     else {
+    for (int i=0; i < array.length; i++)  {
+         System.out.print(array[i] +", ");}
+ System.out.print("}");
 }
- 
-/*else {
-for(int i=array.length-arrayHalf; i < array.length-1; i++) {
-    System.out.print(array[i]+", ");
-    
-} 
- 
-	 System.out.print(array[array.length - 1] + "}");
-} */
-
  
  
 
