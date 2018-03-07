@@ -19,7 +19,7 @@ public class Task6 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        //        Yours code...
+    
 
     }
 }
