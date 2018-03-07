@@ -25,6 +25,12 @@ public class Task6 {
       int sum2 = 0;               
       int arrayHalf = array.length / 2;      
  
+        if (array == null) {
+
+            System.out.print("null");
+
+        } else if (array.length == 0) System.out.print("{}");
+        else {
      if (array.length % 2 == 0) {
  
          for (int i=0; i < array.length; i++) {      
@@ -109,7 +115,7 @@ for(int i=array.length-arrayHalf; i < array.length-1; i++) {
  System.out.print("}");
 }
  
- 
+	}
 
     }
 }
