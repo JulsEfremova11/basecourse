@@ -1,6 +1,7 @@
 package week2;
 
 import base.TaskUtils;
+import methods.Array;
 
 import java.util.Arrays;
 
@@ -16,10 +17,14 @@ import java.util.Arrays;
 public class Task7 {
     public static void main(String[] args) {
 
-        int[] arr1 = TaskUtils.arrayConverter(Arrays.copyOfRange(args,0,  args.length / 2));
-        int[] arr2 = TaskUtils.arrayConverter(Arrays.copyOfRange(args, args.length / 2,  args.length));
+        int[] arr1 = TaskUtils.arrayConverter(Arrays.copyOfRange(args, 0, args.length / 2));
+        int[] arr2 = TaskUtils.arrayConverter(Arrays.copyOfRange(args, args.length / 2, args.length));
+        int[] arr3 = new int[arr1.length];
 
-        //        Yours code...
+        for (int i = 0; i < arr3.length; i++) {
+            arr3[i] = arr1[i] + arr2[i];
+        }
 
+        Array.printArray(arr3);
     }
 }

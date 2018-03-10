@@ -9,7 +9,16 @@ public class Task14 {
 
         int number = Integer.parseInt(args[0]);
 
-        //        Yours code...
+         if (number <= 0) {
+             System.out.print(false);
+             return;
+         }
 
+        for (int i=2; i < number; i++) {
+            if (number % i == 0) {
+                System.out.print(false);
+                return;
+            }
+        } System.out.print(true);
     }
 }

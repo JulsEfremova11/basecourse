@@ -17,7 +17,9 @@ public class Task15 {
         int[] array = TaskUtils.arrayConverter(Arrays.copyOfRange(args, 1, args.length));
         int position = Integer.parseInt(args[0]);
 
-        //        Yours code...
+        for (int i = 0; i < array.length; i++){
+        //    array[i- position];
+        }
 
     }
 }
