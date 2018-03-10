@@ -49,6 +49,7 @@ public class Task14Test extends ConsoleWrapperFixture {
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
 
         Assert.assertThat(consoleResults, CoreMatchers.containsString("false"));
+
     }
 
     @Test

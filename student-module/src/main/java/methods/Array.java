@@ -29,6 +29,7 @@ System.out.print("{");
         }
         System.out.println(nums[nums.length - 1] + "}");
     }
+
     public static void printArray(double[] nums) {
         if (nums == null){
             System.out.println("null");
