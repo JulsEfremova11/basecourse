@@ -129,10 +129,33 @@ public class ArrayUtils {
      *          или пустой массив, если size == 0
      *
      */
-    public static int[] generateRandomEvenOddArray(int size, int min, int max){
-        return null;
-    }
+    public static int[] generateRandomEvenOddArray(int size, int min, int max) {
 
+        if (size < 0 || min >= max) {
+            return null;
+        }
+
+    /*    if (size == 0) {
+            return "{}";
+        } */
+
+        int[] array = new int[size];
+
+        for (int i = 0; i < array.length; i++) {
+
+            array[i] = (int) (min + Math.random() * (max - min));
+
+            if (i == 0 && (i % 2) == 0) { // i & 1 - число чётное если его младший бит = 0
+
+                array[i] = (array.length - i) * 2;
+
+            } else {
+                array[i] = array.length - i;
+            }
+
+        }
+        return array;
+    }
     /**
      * Возвращает строчное (String) редставление переданного массива.
      * Например в виде {1, 2, 3, 4, 5}.
@@ -147,7 +170,24 @@ public class ArrayUtils {
      *
      */
     public static String arrayToString(int[] array){
-        return "{}";
+
+        if (array == null){
+            return null;
+        }
+
+        if (array.length == 0) {
+            return "{}";
+        }
+
+        String string ="{";
+        for (int i = 0; i < array.length - 1; i++) {
+
+            string = string + array[i] + ", ";
+
+        }
+        string = string +array[array.length - 1] + "}";
+
+        return string;
     }
 
     /**

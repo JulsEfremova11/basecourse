@@ -16,15 +16,18 @@ public class Task8 {
         int[] array = TaskUtils.arrayConverter(args);
 
         int k = 0;
+        if (array == null) {
 
-        for (int i=0; i < array.length; i++) {
-            if (array[i] == 5) {
-                k++;
-            }
-            System.out.print(k);
+            System.out.print("null");
+
+        } else if (array.length == 0) System.out.print("{}");
+        else {
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == 5) {
+                    k++;
+                }
+            } System.out.print(k);
         }
-
-
 
     }
 }

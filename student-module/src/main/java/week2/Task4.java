@@ -31,6 +31,5 @@ public class Task4 {
             System.out.println("Min = " + min + ", max = " + max);
         }
 
-
     }
 }
