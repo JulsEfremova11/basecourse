@@ -9,6 +9,7 @@ public class Task14 {
 
         int number = Integer.parseInt(args[0]);
 
+
          if (number <= 0) {
              System.out.print(false);
              return;
@@ -20,5 +21,6 @@ public class Task14 {
                 return;
             }
         } System.out.print(true);
+
     }
 }

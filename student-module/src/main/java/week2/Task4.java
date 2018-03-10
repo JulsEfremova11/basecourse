@@ -12,6 +12,7 @@ public class Task4 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
+
         if (array == null) {
             System.out.print("null");
         } else if (array.length == 0) {
@@ -29,6 +30,7 @@ public class Task4 {
             }
             System.out.println("Min = " + min + ", max = " + max);
         }
+
 
     }
 }

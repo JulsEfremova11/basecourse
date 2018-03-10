@@ -11,6 +11,7 @@ public class Task12 {
     public static void main(String[] args) {
 
         int number = Integer.parseInt(args[0]);
+
 int counter = 0;
 int last;
         while (number!=0) {
@@ -23,5 +24,6 @@ int last;
             number /=10;
         }
 System.out.println(counter);
+
     }
 }

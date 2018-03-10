@@ -12,6 +12,7 @@ import base.TaskUtils;
 public class Task5 {
     public static void main(String[] args) {
 
+
     //    int[] array = TaskUtils.arrayConverter(args);
 int[] array = {2, 4, 0, 8, 1, 9, 9, 2};
 
@@ -39,6 +40,7 @@ int[] array = {2, 4, 0, 8, 1, 9, 9, 2};
             //System.out.print(array[array.length - 1] + "}");
 
         }
+
 
     }
 }

@@ -16,6 +16,5 @@ public class Task10 {
         int[] number = TaskUtils.arrayConverter(args);
 
 
-
     }
 }

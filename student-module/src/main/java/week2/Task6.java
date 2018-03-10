@@ -19,7 +19,103 @@ public class Task6 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        //        Yours code...
+ 
+      int sum1 = 0;     
+      int sum2 = 0;               
+      int arrayHalf = array.length / 2;      
+ 
+        if (array == null) {
+
+            System.out.print("null");
+
+        } else if (array.length == 0) System.out.print("{}");
+        else {
+     if (array.length % 2 == 0) {
+ 
+         for (int i=0; i < array.length; i++) {      
+ 
+          if (i >= 0 && i < arrayHalf) {    
+ 
+            sum1 += array[i];  }      
+ 
+    }
+          sum1= sum1/arrayHalf;   
+ 
+      for (int i=arrayHalf; i < array.length; i++) {   
+ 
+        if (i >= arrayHalf && i < array.length) { 
+ 
+            sum2 += array[i];  }      
+ 
+      } 
+        sum2 = sum2/arrayHalf;              
+System.out.print("{");
+if (sum1 > sum2) {
+for (int i=0; i < arrayHalf-1; i++)  {
+    if (sum1 > sum2) { 
+        System.out.print(array[i]+", "); 
+    }  
+}
+    System.out.print(array[arrayHalf-1] + "}");
+} else if (sum1 < sum2) {
+for(int i=arrayHalf; i < array.length-1; i++) {
+    System.out.print(array[i]+", ");
+	 System.out.print("}");
+ 
+} 
+ 
+     System.out.print(array[array.length - 1] + "}");
+}     else {
+    for (int i=0; i < array.length; i++)  {
+         System.out.print(array[i]);
+    }
+}
+ 
+     } 
+     // проверка если длина массава непарная
+     else
+ 
+         for (int i=0; i < array.length; i++) {      
+ 
+          if (i >= 0 && i < arrayHalf) {    
+ 
+            sum1 += array[i];  }      
+ 
+    }
+          sum1= sum1/arrayHalf;   
+ 
+      for (int i=arrayHalf-1; i < array.length; i++) {   
+ 
+        if (i > arrayHalf && i < array.length) { 
+ 
+            sum2 += array[i];  }      
+ 
+      } 
+        sum2 = sum2/arrayHalf;              
+System.out.print("{");
+if (sum1 > sum2) {
+for (int i=0; i < arrayHalf-1; i++)  {
+    if (sum1 > sum2) { 
+        System.out.print(array[i]+", "); 
+    }  
+}
+    System.out.print(array[arrayHalf-1] + "}");
+} 
+else if (sum1 < sum2) {
+for(int i=array.length-arrayHalf; i < array.length-1; i++) {
+    System.out.print(array[i]+", ");
+ 
+} 
+ 
+     System.out.print(array[array.length - 1] + "}");
+}     else {
+    for (int i=0; i < array.length; i++)  {
+         System.out.print(array[i] +", ");}
+ System.out.print("}");
+}
+ 
+	}
+
 
     }
 }

@@ -17,6 +17,7 @@ import java.util.Arrays;
 public class Task7 {
     public static void main(String[] args) {
 
+
         int[] arr1 = TaskUtils.arrayConverter(Arrays.copyOfRange(args, 0, args.length / 2));
         int[] arr2 = TaskUtils.arrayConverter(Arrays.copyOfRange(args, args.length / 2, args.length));
         int[] arr3 = new int[arr1.length];
@@ -27,4 +28,5 @@ public class Task7 {
 
         Array.printArray(arr3);
     }
+
 }
