@@ -12,9 +12,27 @@ import base.TaskUtils;
 public class Task5 {
     public static void main(String[] args) {
 
-        int[] array = TaskUtils.arrayConverter(args);
+       int[] array = TaskUtils.arrayConverter(args);
+//int[] array = new int[] {4, 6, 6, 3, 1, 99, 44, 356, 25};
 
-        //        Yours code...
+        if (array == null) {
+            System.out.print("null");
+        } else if (array.length == 0) {
+            System.out.print("{}");
+        } else {
+            int min = array[0];
+            int max = array[0];
+
+
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] < min) {
+                    min = array[i];
+                } else if (array[i] > max) {
+                    max = array[i];
+                }
+            }
+            System.out.println("Min = " + min + ", max = " + max);
+        }
 
     }
 }

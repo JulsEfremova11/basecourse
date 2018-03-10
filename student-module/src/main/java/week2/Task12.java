@@ -11,8 +11,17 @@ public class Task12 {
     public static void main(String[] args) {
 
         int number = Integer.parseInt(args[0]);
+int counter = 0;
+int last;
+        while (number!=0) {
+            last = number % 10;
 
-        //        Yours code...
-
+            if (last == 8) {
+                counter++;
+            }
+            //number = number / 10;
+            number /=10;
+        }
+System.out.println(counter);
     }
 }
