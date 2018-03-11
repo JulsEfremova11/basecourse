@@ -10,8 +10,7 @@ public class Task5 {
 
         String text = args[0];
 
-        String[] word = text.split(" ");
-        String[] array = new String[word.length];
+        //        Yours code...
 
     }
 }

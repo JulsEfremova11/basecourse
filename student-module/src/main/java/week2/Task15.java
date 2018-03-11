@@ -21,7 +21,7 @@ public class Task15 {
         int position = 2;
 
         for (int i = 0; i < array.length; i++){
-
+ //for (int k = 2;; )
            array[position] = array[0];
            array[position+1] = array[1];
            array[position+2] = array[2];;
